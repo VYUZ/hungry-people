@@ -7,7 +7,6 @@ logs
 
 # Папка с оригинальными картинками
 #/img/img_orig/
-img/
 
 #gulp npm mods
 node_modules/
