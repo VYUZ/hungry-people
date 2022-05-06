@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="application-name" content=" " />
+    <meta name="author" content="" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content=" " />
+    <title>Hungry People</title>
+    <!-- Подключение стилей скролла -->
+    <!-- <link rel="stylesheet" href="css/fullpage.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/onepage-scroll.css" /> -->
+    <!-- Подключение стилей слайдера -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+    <!-- <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Подключение основых стилей -->
+    <!-- <link rel="stylesheet" href="/css/style.css" as="style" /> -->
+    <link rel="stylesheet" href="css/style.min.css" as="style" />
+    <!-- <link rel="icon" type="image/png" href="./img/icons/64x64.png" /> -->
+  </head>
+
+  <body>
+    <!--HEADER START-->
+    @@include("chunk/header.html")
+    <!--HEADER END-->
+
+    <!--MAIN SECTION START-->
+    <!-- <main id="fullpage"> -->
+    <div class="main">
+      <!--INTRO SECTION START-->
+      @@include("chunk/intro.html")
+      <!--INTRO SECTION END-->
+
+      <!--ABOUT SECTION START-->
+      @@include("chunk/about.html")
+      <!--ABOUT SECTION END-->
+
+      <!--TEAM SECTION START-->
+      @@include("chunk/team.html")
+      <!--TEAM SECTION END-->
+
+      <!--BOOKING SECTION START-->
+      @@include("chunk/booking.html")
+      <!--BOOKING SECTION END-->
+
+      <!--specialties SECTION START-->
+      @@include("chunk/specialties.html")
+      <!--specialties SECTION END-->
+
+      <!--menu SECTION START-->
+      @@include("chunk/menu.html")
+      <!--menu SECTION END-->
+
+      <!--events SECTION START-->
+      @@include("chunk/events.html")
+      <!--events SECTION END-->
+
+      <!--gallery SECTION START-->
+      @@include("chunk/gallery.html")
+      <!--gallery SECTION END-->
+
+      <!--contact SECTION START-->
+      @@include("chunk/contact.html")
+      <!--contact SECTION END-->
+
+      <!--map SECTION START-->
+      @@include("chunk/map.html")
+      <!--map SECTION END-->
+    </div>
+    <!--MAIN SECTION END-->
+
+    <!--FOOTER SECTION START-->
+    @@include("chunk/footer.html")
+    <!--FOOTER SECTION END-->
+
+    <!--подключение скриптов-->
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <!-- <script src="../js/swiper-bundle.min.js"></script> -->
+    <!-- <script type="module">
+      import { Swiper } from "./js/swiper-bundle.esm.browser.min.js";
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        spaceBetween: 20,
+      });
+    </script> -->
+    <!-- <script src="js/fullpage.min.js"></script> -->
+    <!-- <script src="js/onepagescroll.min.js"></script> -->
+    <!-- <script src="js/scroll.js"></script> -->
+    <script src="/js/t-scroll.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/brands.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- <script src="js/solid.min.js"></script> -->
+    <!-- <script src="./fonts/fontawesome/js/all.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

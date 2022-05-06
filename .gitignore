@@ -1,0 +1,18 @@
+# Игнорирование логов 
+logs 
+*.log 
+
+# Игнорирование файлов специфичных для IDE 
+.vscode/ 
+
+# Папка с оригинальными картинками
+#/img/img_orig/
+img/
+
+#gulp npm mods
+node_modules/
+package*.json
+
+#templates
+*.psd
+

@@ -1,0 +1,36 @@
+<section class="booking fullscreen section">
+  <div class="section-col booking-row container">
+    <div class="section-page row booking-row">
+      <article class="article booking-article slideRight">
+        <h2 class="h2 article-title booking__article-title">book a table</h2>
+        <form action="#!" class="booking__form">
+          <div class="booking__inputs">
+            <input type="text" placeholder="name" class="booking__input" />
+            <input type="email" placeholder="email" class="booking__input" />
+            <input type="tel" placeholder="Phone" class="booking__input" />
+            <input type="text" placeholder="People" class="booking__input" list="people" />
+            <input type="text" placeholder="Date (mm/dd)" class="booking__input" />
+            <input type="text" placeholder="Time" class="booking__input" list="time" />
+          </div>
+          <datalist id="people">
+            <option value="1" label="один"></option>
+            <option value="2" label="два"></option>
+            <option value="3" label="три"></option>
+            <option value="more" label="больше"></option>
+          </datalist>
+          <datalist id="time">
+            <option value="9 - 12" label="AM"></option>
+            <option value="12 - 18" label="PM"></option>
+          </datalist>
+          <button type="submit" class="booking__submit">BOOK NOW</button>
+        </form>
+      </article>
+      <div class="img-container img-container-right booking__img-container slideLeft">
+        <div class="img-item img-right booking__img"></div>
+      </div>
+    </div>
+    <div class="booking__schedule">
+      Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782
+    </div>
+  </div>
+</section>

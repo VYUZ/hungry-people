@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/font/open-sans-v27-latin-regular.woff2") format("woff2"),
+    url("/fonts/open-sans-v27-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/font/open-sans-v27-latin-700.woff2") format("woff2"),
+    url("/fonts/open-sans-v27-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Banny";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: local(""), url("/font/Banny-BoldRound.woff2") format("woff2"), url("/font/Banny-BoldRound.woff") format("woff");
+}
+
+@import "../../font/fontawesome/scss/fontawesome.scss";
+@import "../../font/fontawesome/scss/brands.scss";
+@import "../../font/fontawesome/scss/solid.scss";

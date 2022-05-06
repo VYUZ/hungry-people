@@ -1,0 +1,28 @@
+/*Variables*/
+$fa-font-path: "../font/fontawesome/webfonts";
+$mygrey: #e5e5e5;
+$myyellow: #e8c300;
+$bg-color: #290404;
+$grey: rgba(51, 51, 51, 1);
+$light-grey: rgba(51, 51, 51, 0.5);
+$gap: 80px;
+$borderline: 1px solid rgba(255, 255, 255, 0.2);
+$col: 12;
+$col-1: 0 1 calc(100% / #{$col} * 1 - #{$gap});
+$col-3: 0 1 calc(100% / #{$col} * 3 - #{$gap});
+$col-4: 0 1 calc(100% / #{$col} * 4 - #{$gap});
+$col-5: 0 1 calc(100% / #{$col} * 5 - #{$gap});
+$col-6: 0 1 calc(100% / #{$col} * 6 - #{$gap});
+$col-8: 0 1 calc(100% / #{$col} * 8 - #{$gap});
+$col-12: 0 1 calc(100% / #{$col} * 12 - #{$gap});
+
+@mixin m1300 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+@mixin m800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}

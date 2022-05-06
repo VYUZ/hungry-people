@@ -1,0 +1,272 @@
+@use "sass:math";
+
+@import "block/start";
+@import "block/vars";
+@import "block/font";
+
+/* общие стили */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #000000;
+  text-align: center;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 $gap * 0.5;
+  margin: 0 auto;
+  @include m1300 {
+    max-width: 1200px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  margin-left: -$gap * 0.5;
+  margin-right: -$gap * 0.5;
+}
+.col {
+  margin: 0 $gap * 0.5;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-family: Banny;
+  font-size: 96px;
+  letter-spacing: 0em;
+  line-height: 1.45;
+}
+h1,
+h2 {
+  &::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background: $myyellow;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+h2 {
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 133%;
+  text-transform: uppercase;
+  &::after {
+    margin: 10px auto;
+  }
+}
+h3 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+h4 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 117%;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.section-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-title {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.section-page {
+  justify-content: center;
+  align-items: center;
+  @include m1300 {
+    flex-direction: column;
+  }
+}
+.article {
+  flex: $col-6;
+  @include m1300 {
+    width: 80%;
+  }
+}
+.article-desc {
+  line-height: 24px;
+}
+.img-container {
+  flex: $col-6;
+  display: flex;
+}
+.img-container-left {
+  justify-content: flex-end;
+}
+.img-container-right {
+  justify-content: flex-start;
+}
+.img-item {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 475px;
+  width: 475px;
+  @include m800 {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+    border: 20px solid $myyellow;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.5), 0px 0px 50px rgba(0, 0, 0, 0.5);
+    @include m800 {
+      width: 32vw;
+      height: 32vw;
+      border-width: 3vw;
+    }
+  }
+}
+.img-right::before {
+  right: -125px;
+  @include m800 {
+    right: -15vw;
+  }
+}
+.img-left::before {
+  left: -125px;
+  @include m800 {
+    left: -15vw;
+  }
+}
+.img-title {
+  font-family: Banny;
+  font-size: 24px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 80px;
+  height: 100%;
+  max-height: 475px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  background-color: #000000;
+  border-radius: 5px 0px 0px 5px;
+  writing-mode: vertical-rl;
+  //transform: rotate(90deg);
+  &.img-title-r {
+    order: -1;
+    transform: rotate(180deg);
+  }
+}
+.fullscreen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.line::before,
+.line::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.line::before {
+  left: calc(50% - 17vw);
+}
+.line::after {
+  left: calc(50% + 17vw);
+}
+.line-center::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@import "../node_modules/t-scroll/sass/t-scroll.min.scss";
+
+/* HEADER START */
+
+@import "block/header";
+
+/* HEADER END */
+
+/* MAIN START */
+
+@import "block/main";
+
+/* MAIN END */
+
+/* FOOTER START */
+
+@import "block/footer";
+
+/* FOOTER END */
+
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+
+/* Laptops */
+@media only screen and (max-width: 1200px) {
+}
+/* Tablets, Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+/* Phones */
+@media only screen and (max-width: 575px) {
+}
+/* Extra Small Devices, old Phones */
+@media only screen and (max-width: 480px) {
+}
