@@ -537,6 +537,116 @@
 }
 /* gallery END */
 /* contact START */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact__input,
+.contact__textarea {
+  background: #e5e5e5;
+  border-radius: 5px;
+  flex-grow: 1;
+  color: $light-grey;
+  line-height: 19px;
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  display: inline-block;
+  text-transform: capitalize;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px inset rgba(51, 51, 51, 0.1);
+    outline: none;
+  }
+}
+.contact__input {
+  // height: 60px;
+  border-radius: 5px;
+  // flex: $col-4;
+  flex-basis: 32%;
+  flex-grow: 1;
+  // max-width: 278px;
+  color: $light-grey;
+  line-height: 19px;
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  display: inline-block;
+  text-transform: capitalize;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px inset rgba(51, 51, 51, 0.1);
+    outline: none;
+  }
+}
+.contact__textarea {
+  flex-basis: 100%;
+}
+
+.contact__sum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.contact__sum-data {
+  display: flex;
+  flex: $col-6;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  & span {
+    font-size: 12px;
+    font-weight: 700;
+    color: $light-grey;
+    text-align: center;
+    & i {
+      font-size: 14px;
+      // line-height: 14;
+      font-weight: 900;
+      color: $myyellow;
+      padding: 0 10px 0 0;
+    }
+  }
+}
+
+.contact__sum-btn {
+  display: flex;
+  flex: $col-6;
+  flex-grow: 1;
+  // max-width: 564px;
+  background: #e8c300;
+  height: 60px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 /* contact END */
 /* map START */
+
 /* map END */

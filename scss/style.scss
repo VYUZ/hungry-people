@@ -111,6 +111,8 @@ button::-moz-focus-inner {
 }
 .article {
   flex: $col-6;
+  max-width: 50%;
+  margin-bottom: 50px;
   @include m1300 {
     width: 80%;
   }
@@ -118,6 +120,7 @@ button::-moz-focus-inner {
 .article-desc {
   line-height: 24px;
 }
+
 .img-container {
   flex: $col-6;
   display: flex;
