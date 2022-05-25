@@ -27,14 +27,14 @@
     <header class="header">
   <nav class="header__nav container">
     <ul id="myMenu" class="header__nav-list">
-      <li data-menuanchor="home" class="active header__nav-item"><a href="#home" class="header__nav-link">HOME</a></li>
+      <li data-menuanchor="home" class="active header__nav-item"><a href="#" class="header__nav-link">HOME</a></li>
       <li data-menuanchor="about" class="header__nav-item"><a href="#about" class="header__nav-link">ABOUT</a></li>
       <li data-menuanchor="team" class="header__nav-item"><a href="#team" class="header__nav-link">TEAM</a></li>
       <li data-menuanchor="booking" class="header__nav-item"><a href="#booking" class="header__nav-link">BOOKING</a></li>
     </ul>
     <ul class="header__nav-list">
       <li data-menuanchor="menu" class="header__nav-item"><a href="#menu" class="header__nav-link">MENU</a></li>
-      <li data-menuanchor="galerie" class="header__nav-item"><a href="#galerie" class="header__nav-link">GALERIE</a></li>
+      <li data-menuanchor="galerie" class="header__nav-item"><a href="#galery" class="header__nav-link">GALERIE</a></li>
       <li data-menuanchor="events" class="header__nav-item"><a href="#events" class="header__nav-link">EVENTS</a></li>
       <li data-menuanchor="contact" class="header__nav-item"><a href="#contact" class="header__nav-link">CONTACT</a></li>
     </ul>
@@ -105,7 +105,7 @@
       <!--ABOUT SECTION END-->
 
       <!--TEAM SECTION START-->
-      <section class="team fullscreen section">
+      <section class="team fullscreen section" id="team">
   <div class="section-col team-row container line">
     <h4 class="section-title team__title slideDown">OUR TEAM</h4>
     <div class="section-page row team-page line-center">
@@ -130,7 +130,7 @@
       <!--TEAM SECTION END-->
 
       <!--BOOKING SECTION START-->
-      <section class="booking fullscreen section">
+      <section class="booking fullscreen section" id="booking">
   <div class="section-col booking-row container">
     <div class="section-page row booking-row">
       <article class="article booking-article slideRight">
@@ -236,7 +236,7 @@
       <!--specialties SECTION END-->
 
       <!--menu SECTION START-->
-      <section class="menu fullscreen container section-col section-page section">
+      <section class="menu fullscreen container section-col section-page section" id="menu">
   <article class="article menu-article">
     <h2 class="h2 article-title about__article-title">DELICIOUS MENU</h2>
     <h3 class="h3 article-subtitle about__article-subtitle">
@@ -2198,7 +2198,7 @@
       <!--menu SECTION END-->
 
       <!--events SECTION START-->
-      <section class="events fullscreen section">
+      <section class="events fullscreen section" id="events">
   <div class="section-col events-row container line">
     <h4 class="section-title events__title slideDown">PRIVATE EVENTS</h4>
     <div class="section-page row events-page line-center">
@@ -2220,7 +2220,7 @@
       <!--events SECTION END-->
 
       <!--gallery SECTION START-->
-      <div class="gallery-page" id="gallery">
+      <div class="gallery-page" id="galery">
   <div class="gallery-page__pic gallery__t-scroll1 slideRight">
     <picture><source srcset="/img/gallery-pic1.webp" type="image/webp"><img src="/img/gallery-pic1.jpg" alt="gallery-view-1" class="gallery-page__img"></picture>
   </div>
@@ -2232,7 +2232,31 @@
       <!--gallery SECTION END-->
 
       <!--contact SECTION START-->
-      
+      <section class="contact fullscreen container section-col section-page section" id="contact">
+    <article class="article contact-article">
+      <h2 class="h2 article-title about__article-title">CONTACT</h2>
+      <h3 class="h3 article-subtitle about__article-subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+      </h3>
+    </article>
+    <form action="#!" class="contact__form">
+      <div class="contact__inputs">
+        <input type="text" placeholder="Name" class="contact__input">
+        <input type="email" placeholder="Email" class="contact__input">
+        <input type="tel" placeholder="Phone" class="contact__input">
+        <textarea name="message" id="" placeholder="Message" class="contact__textarea" rows="3"></textarea>
+      </div>
+      <div class="contact__sum">
+        <div class="contact__sum-data">
+          <span><i class="fa-solid fa-location-dot"></i>5th London Boulevard, U.K.</span>
+          <span><i class="fa-solid fa-location-dot"></i>5th London Boulevard, U.K.</span>
+          <span><i class="fa-solid fa-location-dot"></i>5th London Boulevard, U.K.</span>
+        </div>
+        <button type="submit" class="contact__sum-btn">send message</button>
+      </div>
+    </form>
+  </section>
+  
       <!--contact SECTION END-->
 
       <!--map SECTION START-->
