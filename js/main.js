@@ -203,3 +203,34 @@ Tu.tScroll({
   "t-duration": 0.8,
   "t-delay": 0.9,
 });
+// Tu.tScroll({
+//   "t-element": ".article-title.slideDown",
+//   "t-duration": 0.5,
+//   "t-delay": 0.1,
+//   "t-position": 150,
+// });
+Tu.tScroll({
+  "t-element": "section.contact .t-anim-1.slideUp",
+  "t-duration": 1.5,
+  "t-delay": 0.5,
+});
+Tu.tScroll({
+  "t-element": "section.contact .t-anim-2.slideUp",
+  "t-duration": 1.75,
+  "t-delay": 0.75,
+});
+Tu.tScroll({
+  "t-element": "section.contact .t-anim-3.slideUp",
+  "t-duration": 1.85,
+  "t-delay": 0.85,
+});
+Tu.tScroll({
+  "t-element": "section.contact .t-anim-4.slideUp",
+  "t-duration": 1.9,
+  "t-delay": 0.9,
+});
+Tu.tScroll({
+  "t-element": ".contact__inputs > .t-animated.zoomInDown",
+  "t-duration": 0.5,
+  "t-delay": 0.5,
+});

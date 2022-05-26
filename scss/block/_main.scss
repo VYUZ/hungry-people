@@ -16,7 +16,7 @@
 }
 .intro__wheel-pic {
   margin: 0 auto;
-  margin-top: 25px;
+  // margin-top: 25px;
   animation-name: wheel-rotation;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -52,7 +52,7 @@
     width: 1px;
     height: 90vh;
     bottom: 0;
-    left: calc(50% - 17vw);
+    left: calc(50% - 20vw);
     background: rgba(255, 255, 255, 0.2);
   }
   &::after {
@@ -61,7 +61,7 @@
     width: 1px;
     height: 90vh;
     bottom: 0;
-    left: calc(50% + 17vw);
+    left: calc(50% + 20vw);
     background: rgba(255, 255, 255, 0.2);
   }
   text-align: center;
@@ -238,7 +238,8 @@
   border-radius: 5px;
   flex: $col-6;
   flex-grow: 1;
-  max-width: 278px;
+  // max-width: 278px;
+  width: 100%;
   color: $light-grey;
   line-height: 19px;
   padding: 20px;
@@ -260,7 +261,7 @@
   width: 100%;
   flex: $col-12;
   flex-grow: 1;
-  max-width: 564px;
+  // max-width: 564px;
   background: #e8c300;
   height: 60px;
   border-radius: 5px;
