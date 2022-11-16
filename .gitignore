@@ -2,16 +2,41 @@
 logs 
 *.log 
 
+#modx files
+assets/
+core/
+pusti/
+index.php
+.htaccess
+adminka.txt
+index.php
+
 # Игнорирование файлов специфичных для IDE 
 .vscode/ 
 
+#modx files
+assets/
+core/
+pusti/
+index.php
+.htaccess
+adminka.txt
+index.php
+
 # Папка с оригинальными картинками
 #/img/img_orig/
+_img_src/
 
 #gulp npm mods
 node_modules/
-package*.json
+package-lock.json
 
 #templates
 *.psd
+screen.jpg
+tmp/
+
+#Архивы
+*.rar
+*.zip
 
