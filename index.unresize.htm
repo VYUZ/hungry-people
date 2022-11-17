@@ -10,21 +10,23 @@
     <meta name="keywords" content=" " />
     <title>Hungry People</title>
     <!-- Подключение стилей скролла -->
-    <!-- <link rel="stylesheet" href="css/fullpage.min.css?_v=20221116153913" /> -->
-    <!-- <link rel="stylesheet" href="css/onepage-scroll.css?_v=20221116153913" /> -->
+    <!-- <link rel="stylesheet" href="css/fullpage.min.css?_v=20221117112405" /> -->
+    <!-- <link rel="stylesheet" href="css/onepage-scroll.css?_v=20221117112405" /> -->
     <!-- Подключение стилей слайдера -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css?_v=20221116153913" /> -->
-    <!-- <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css?_v=20221116153913"> -->
-    <link rel="stylesheet" href="files/swiper-slider/swiper-bundle.min.css?_v=20221116153913" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css?_v=20221117112405" /> -->
+    <!-- <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css?_v=20221117112405"> -->
+    <link rel="stylesheet" href="files/swiper-slider/swiper-bundle.min.css?_v=20221117112405" />
+    <!-- <link rel="stylesheet" href="files/fullpage.min.css?_v=20221117112405" /> -->
     <!-- Подключение основых стилей -->
-    <!-- <link rel="stylesheet" href="/css/style.css?_v=20221116153913" as="style" /> -->
-    <link rel="stylesheet" href="css/style.css?_v=20221116153913" as="style" />
+    <!-- <link rel="stylesheet" href="/css/style.css?_v=20221117112405" as="style" /> -->
+    <link rel="stylesheet" href="css/style.css?_v=20221117112405" as="style" />
     <!-- <link rel="icon" type="image/png" href="./img/icons/64x64.png" /> -->
   </head>
 
   <body>
-    <!--HEADER START-->
-    <header class="header">
+    <div id="fullpage">
+      <!--HEADER START-->
+      <header class="header">
   <nav class="header__nav container">
     <ul id="myMenu" class="header__nav-list">
       <li data-menuanchor="home" class="active header__nav-item"><a href="#" class="header__nav-link">HOME</a></li>
@@ -41,13 +43,13 @@
   </nav>
 </header>
 
-    <!--HEADER END-->
+      <!--HEADER END-->
 
-    <!--MAIN SECTION START-->
-    <!-- <main id="fullpage"> -->
-    <div class="main">
-      <!--INTRO SECTION START-->
-      <section class="intro fullscreen section">
+      <!--MAIN SECTION START-->
+      <!-- <main id="fullpage"> -->
+      <div class="main">
+        <!--INTRO SECTION START-->
+        <section class="intro fullscreen section">
   <div class="intro__wheel">
     <img src="/img/svg/wheel.svg" alt="logo" class="intro__wheel-pic" />
   </div>
@@ -80,10 +82,10 @@
   </div>
 </section>
 
-      <!--INTRO SECTION END-->
+        <!--INTRO SECTION END-->
 
-      <!--ABOUT SECTION START-->
-      <section class="about fullscreen container section" id="about">
+        <!--ABOUT SECTION START-->
+        <section class="about fullscreen container section" id="about">
   <div class="section-page row about-row">
     <article class="article about-article slideRight">
       <h2 class="h2 article-title about__article-title">about us</h2>
@@ -102,10 +104,10 @@
   </div>
 </section>
 
-      <!--ABOUT SECTION END-->
+        <!--ABOUT SECTION END-->
 
-      <!--TEAM SECTION START-->
-      <section class="team fullscreen section"  id="team">
+        <!--TEAM SECTION START-->
+        <section class="team fullscreen section"  id="team">
   <div class="section-col team-row container line">
     <h4 class="section-title team__title slideDown">OUR TEAM</h4>
     <div class="section-page row team-page line-center">
@@ -127,10 +129,10 @@
   </div>
 </section>
 
-      <!--TEAM SECTION END-->
+        <!--TEAM SECTION END-->
 
-      <!--BOOKING SECTION START-->
-      <section class="booking fullscreen section"  id="booking">
+        <!--BOOKING SECTION START-->
+        <section class="booking fullscreen section"  id="booking">
   <div class="section-col booking-row container">
     <div class="section-page row booking-row">
       <article class="article booking-article slideRight">
@@ -167,10 +169,10 @@
   </div>
 </section>
 
-      <!--BOOKING SECTION END-->
+        <!--BOOKING SECTION END-->
 
-      <!--specialties SECTION START-->
-      <section class="specialties fullscreen line-center section">
+        <!--specialties SECTION START-->
+        <section class="specialties fullscreen line-center section" id="specialties">
   <div class="section-col container line swiper specialties-row">
     <h4 class="section-title specialties__title slideDown">SPECIALTIES</h4>
     <!-- Slider main container -->
@@ -233,10 +235,10 @@
   </div>
 </section>
 
-      <!--specialties SECTION END-->
+        <!--specialties SECTION END-->
 
-      <!--menu SECTION START-->
-      <section class="menu fullscreen container section-col section-page section"  id="menu">
+        <!--menu SECTION START-->
+        <section class="menu fullscreen container section-col section-page section"  id="menu">
   <article class="article menu-article">
     <h2 class="h2 article-title about__article-title">DELICIOUS MENU</h2>
     <h3 class="h3 article-subtitle about__article-subtitle">
@@ -2195,10 +2197,10 @@
   </div>
 </section>
 
-      <!--menu SECTION END-->
+        <!--menu SECTION END-->
 
-      <!--events SECTION START-->
-      <section class="events fullscreen section" id="events">
+        <!--events SECTION START-->
+        <section class="events fullscreen section" id="events">
   <div class="section-col events-row container line">
     <h4 class="section-title events__title slideDown">PRIVATE EVENTS</h4>
     <div class="section-page row events-page line-center">
@@ -2217,10 +2219,10 @@
   </div>
 </section>
 
-      <!--events SECTION END-->
+        <!--events SECTION END-->
 
-      <!--gallery SECTION START-->
-      <div class="gallery-page" id="galery">
+        <!--gallery SECTION START-->
+        <div class="gallery-page" id="galery">
   <div class="gallery-page__pic gallery__t-scroll1 slideRight">
     <picture><source srcset="/img/gallery-pic1.webp" type="image/webp"><img src="/img/gallery-pic1.jpg" alt="gallery-view-1" class="gallery-page__img" /></picture>
   </div>
@@ -2229,10 +2231,10 @@
   <div class="gallery-page__pic gallery__t-scroll4 slideRight"><picture><source srcset="/img/gallery-pic4.webp" type="image/webp"><img src="/img/gallery-pic4.jpg" alt="gallery-view-4" class="gallery-page__img"></picture></div>
 </div>
 
-      <!--gallery SECTION END-->
+        <!--gallery SECTION END-->
 
-      <!--contact SECTION START-->
-      <section class="contact fullscreen container section-col section-page section" id="contact">
+        <!--contact SECTION START-->
+        <section class="contact fullscreen container section-col section-page section" id="contact">
   <article class="article contact-article">
     <h2 class="h2 article-title about__article-title t-anim-1 slideUp">CONTACT</h2>
     <h3 class="h3 article-subtitle about__article-subtitle t-anim-2 slideUp">
@@ -2262,52 +2264,56 @@
       <button type="submit" class="contact__sum-btn">send message</button>
     </div>
   </form>
+  <div class="contact__iframe-wrapper t-anim-5 slideDown">
+    <iframe
+      class="contact__iframe"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22347.510086090326!2d-122.68178545344237!3d45.56161463212647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a7bdb0b8fef5%3A0x53d58cc8b5f4523b!2sGoodwill%20Industries%20of%20the%20Columbia%20Willamette!5e0!3m2!1sru!2sru!4v1653492411963!5m2!1sru!2sru"
+      width="1440"
+      height="475"
+      style="border: 0"
+      allowfullscreen="1"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 </section>
 
-      <!--contact SECTION END-->
-    </div>
-    <!--MAIN SECTION END-->
+        <!--contact SECTION END-->
+      </div>
+      <!--MAIN SECTION END-->
 
-    <!--FOOTER SECTION START-->
-    <footer class="footer">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22347.510086090326!2d-122.68178545344237!3d45.56161463212647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a7bdb0b8fef5%3A0x53d58cc8b5f4523b!2sGoodwill%20Industries%20of%20the%20Columbia%20Willamette!5e0!3m2!1sru!2sru!4v1653492411963!5m2!1sru!2sru"
-    width="1440"
-    height="475"
-    style="border: 0"
-    allowfullscreen="1"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
-
+      <!--FOOTER SECTION START-->
+      <footer class="footer">
   <p class="footer__copyright">© Copyright&nbsp;<span>Mindblister </span>&nbsp;2019</p>
 </footer>
 
-    <!--FOOTER SECTION END-->
+      <!--FOOTER SECTION END-->
 
-    <!--подключение скриптов-->
+      <!--подключение скриптов-->
 
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js?_v=20221116153913"></script> -->
-    <!-- <script src="../js/swiper-bundle.min.js?_v=20221116153913"></script> -->
-    <!-- <script type="module">
+      <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js?_v=20221117112405"></script> -->
+      <!-- <script src="../js/swiper-bundle.min.js?_v=20221117112405"></script> -->
+      <!-- <script type="module">
       import { Swiper } from "./js/swiper-bundle.esm.browser.min.js";
       const swiper = new Swiper(".swiper", {
         loop: true,
         spaceBetween: 20,
       });
     </script> -->
-    <!-- <script src="js/fullpage.min.js?_v=20221116153913"></script> -->
-    <!-- <script src="js/onepagescroll.min.js?_v=20221116153913"></script> -->
-    <!-- <script src="js/scroll.js?_v=20221116153913"></script> -->
-    <script src="/files/t-scroll.min.js?_v=20221116153913"></script>
-    <!-- <script src="files/fontawesome/js/all.js?_v=20221116153913"></script> -->
-    <script src="files/fontawesome/js/fontawesome.min.js?_v=20221116153913"></script>
-    <script src="files/fontawesome/js/brands.min.js?_v=20221116153913"></script>
-    <script src="files/fontawesome/js/solid.min.js?_v=20221116153913"></script>
-    <script src="files/swiper-slider/swiper-bundle.min.js?_v=20221116153913"></script>
-    <script src="files/slider.js?_v=20221116153913"></script>
-    <!-- <script src="js/solid.min.js?_v=20221116153913"></script> -->
-    <!-- <script src="./fonts/fontawesome/js/all.js?_v=20221116153913"></script> -->
-    <script src="js/scripts.min.js?_v=20221116153913"></script>
+      <!-- <script src="js/fullpage.min.js?_v=20221117112405"></script> -->
+      <!-- <script src="js/onepagescroll.min.js?_v=20221117112405"></script> -->
+      <!-- <script src="js/scroll.js?_v=20221117112405"></script> -->
+      <script src="/files/t-scroll.min.js?_v=20221117112405"></script>
+      <!-- <script src="files/fontawesome/js/all.js?_v=20221117112405"></script> -->
+      <script src="files/fontawesome/js/fontawesome.min.js?_v=20221117112405"></script>
+      <script src="files/fontawesome/js/brands.min.js?_v=20221117112405"></script>
+      <script src="files/fontawesome/js/solid.min.js?_v=20221117112405"></script>
+      <script src="files/swiper-slider/swiper-bundle.min.js?_v=20221117112405"></script>
+      <script src="files/slider.js?_v=20221117112405"></script>
+      <!-- <script src="files/fullpage.min.js?_v=20221117112405"></script> -->
+      <!-- <script src="js/solid.min.js?_v=20221117112405"></script> -->
+      <!-- <script src="./fonts/fontawesome/js/all.js?_v=20221117112405"></script> -->
+      <script src="js/scripts.min.js?_v=20221117112405"></script>
+    </div>
   </body>
 </html>
