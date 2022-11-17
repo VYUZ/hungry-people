@@ -253,7 +253,7 @@ Tu.tScroll({
   "t-delay": 0.9,
 });
 Tu.tScroll({
-  "t-element": ".contact__inputs > .t-animated.zoomInDown",
+  "t-element": ".contact__inputs > .zoomInDown",
   "t-duration": 0.5,
   "t-delay": 0.5,
 });
