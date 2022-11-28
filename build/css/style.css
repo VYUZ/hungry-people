@@ -17664,6 +17664,12 @@ p.footer__copyright span {
   }
 }
 
+@media only screen and (max-width: 820px) {
+  .gallery-page__pic {
+    flex: 1 0 300px;
+  }
+}
+
 @media (max-width: 800px) {
   .img-item {
     width: 60vw;
